@@ -4,14 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador</title>
+    <link rel="stylesheet" href="css_bs/bootstrap.min.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>OSCoder</title>
 </head>
-<body>
-    <h1>Consultorios médicos</h1>
 
-    <h2>Sistema para personal administrativo</h2>
+<body style="background-color: gray;">
 
-    
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/logo_navbar.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+            OSCoder
+          </a>
+        </div>
+      </nav>
+
+    <h1 class="text-center">Consultorios médicos</h1>
+
+    <h2 class="text-center">Sistema para personal administrativo</h2>
+
+    <form class="row g-5 vw-100" id="formulario">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <label for="info" class="form-label">Dato</label>
+          <input type="text" class="form-control" id="info" placeholder="Dato a consultar (total de horas, paga o consultorio)" required>
+        </div>
+        <div class="col-md-5">
+          <label for="espec" class="form-label">Especialidad</label>
+          <input type="text" class="form-control" id="espec" placeholder="Cardio, Gineco, Trauma, Clínico, Eco u Oftalmo" required>
+        </div>
+        <div class="col-md-1"></div>
+
+        <!-- <div class="col-md-1"></div>
+        <div class="col-10">
+          <label for="query" class="form-label">Consulta</label>
+          <textarea cols="50" rows="5" class="form-control" id="query" placeholder="¿Cuál es tu consulta?" required>
+          </textarea>
+        </div>
+        <div class="col-md-1"></div> -->
+
+        <div class="col-md-1"></div>
+        <div class="col-10">
+          <button type="submit" class="btn btn-light" id="submit">Enviar consulta</button>
+        </div>
+        <div class="col-md-1"></div>
+      </form>
+      
     <script src="simul.js"></script>
 </body>
 </html>
